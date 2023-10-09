@@ -3,7 +3,7 @@ import { ethers, upgrades } from "hardhat";
 async function main() {
   const StIbSquare = await ethers.getContractFactory("StIbSquare");
 
-  const ibSquare = "0x16d3e66A3Ee2cC303d309EA93ffaEa56c89effe5";
+  const ibSquare = "0x6B41a8a7f6ce32366474dFe14246342d52598ab2";
   const name = "Streaming IbSquare";
   const symbol = "StIbSquare";
   const superfluidHost = "0xEB796bdb90fFA0f28255275e16936D25d3418603";

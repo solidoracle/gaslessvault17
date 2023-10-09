@@ -6,8 +6,8 @@ async function main() {
 
   const name = "Interest Bearing Square";
   const symbol = "IbSquare";
-  const usdt = "0xFCe7187B24FCDc9feFfE428Ec9977240C6F7006D"; // mock usdt on mumbai
-  const supportedTokens = [usdt];
+  const usdc = "0x7ffAE00B81355C763EF3F0ca042184762c48439F"; // usdc on mumbai, used by UB
+  const supportedTokens = [usdc];
   const interestPerSecond = BigNumber.from("100000000470636740");
   const annualInterest = 500;
   const trustedForwarder = "0x69015912AA33720b842dCD6aC059Ed623F28d9f7"; // https://docs-gasless.biconomy.io/misc/contract-addresses
@@ -33,4 +33,4 @@ main()
   });
 
 // npx hardhat run deploy/deployIbSquare_mumbai.ts --network polygonMumbai
-// npx hardhat verify 0x16d3e66A3Ee2cC303d309EA93ffaEa56c89effe5 --network polygonMumbai
+// npx hardhat verify 0x6B41a8a7f6ce32366474dFe14246342d52598ab2 --network polygonMumbai
